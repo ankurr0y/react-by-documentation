@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Welcome from './Welcome'
+import Clock from './Clock'
 
 // const name="Ankur Roy";
 // const hello = <h1>Hello {name}</h1>;
@@ -37,3 +38,14 @@ ReactDOM.render(
   <Names></Names>,
   document.getElementById('root')
 );
+
+function Timer(){
+  return(
+  ReactDOM.render(
+    <Clock date={new Date()}></Clock>,
+    document.getElementById('watch')
+  )
+  );
+}
+
+setInterval(Timer, 1000)
