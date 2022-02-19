@@ -5,6 +5,7 @@ import Welcome from "./Welcome";
 import Clock from "./Clock";
 import ToggleButton from "./ToggleButton";
 import Warn from "./Warn";
+import Map from "./Map";
 
 // const name="Ankur Roy";
 // const hello = <h1>Hello {name}</h1>;
@@ -55,4 +56,14 @@ ReactDOM.render(
 ReactDOM.render(
   <Warn></Warn>,
   document.getElementById('warn')
+);
+
+const posts = [
+  {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
+  {id: 2, title: 'Installation', content: 'You can install React from npm.'}
+];
+
+ReactDOM.render(
+  <Map posts={posts}></Map>,
+  document.getElementById('post')
 );
