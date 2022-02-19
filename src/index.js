@@ -4,6 +4,7 @@ import "./index.css";
 import Welcome from "./Welcome";
 import Clock from "./Clock";
 import ToggleButton from "./ToggleButton";
+import Warn from "./Warn";
 
 // const name="Ankur Roy";
 // const hello = <h1>Hello {name}</h1>;
@@ -49,4 +50,9 @@ ReactDOM.render(
 ReactDOM.render(
   <ToggleButton></ToggleButton>,
   document.getElementById('butt')
+);
+
+ReactDOM.render(
+  <Warn></Warn>,
+  document.getElementById('warn')
 );
