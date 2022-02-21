@@ -6,6 +6,7 @@ import Clock from "./Clock";
 import ToggleButton from "./ToggleButton";
 import Warn from "./Warn";
 import Map from "./Map";
+import NameForm from "./FormHandle";
 
 // const name="Ankur Roy";
 // const hello = <h1>Hello {name}</h1>;
@@ -66,4 +67,9 @@ const posts = [
 ReactDOM.render(
   <Map posts={posts}></Map>,
   document.getElementById('post')
+);
+
+ReactDOM.render(
+  <NameForm></NameForm>,
+  document.getElementById('name')
 );
